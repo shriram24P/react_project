@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+.content-main {
+    background-image: linear-gradient(to right, #12132e, #9798F6);
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 700px;
+}
+
+.sub-div1 {
+    margin-left: 50px;
+    color: white;
+    width: 450px;
+    margin-right: 150px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-heading {
+    font-size: 64px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.sub-heading {
+    font-size: 24px;
+    font-weight: 200;
+    color: rgb(250, 249, 249);
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.main-img1 {
+    width: 500px;
+    margin-top: -20px;
+   
+    overflow-y: scroll;
+    inset: 7;
+
+}
+
+.main-img2 {
+    width: 500px;
+    margin-top: -180px;
+    overflow: scroll;
+}
+
+
+.my-button {
+    border: none;
+    background: none;
+    color: #f9f9f9;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-top: 70px;
+
+   }
+  
+   .my-logo {
+    padding: 10px;
+    font-weight: 200;
+    padding-right: 14px;
+    padding-left: 14px;
+    border-radius: 30px;
+    background: rgba(78, 76, 175, 0.3);
+    margin-right: 15px;
+    
+   }
+
+
+ 
