@@ -4,7 +4,7 @@ import "./styles.css";
 const LandingPages = () => {
   return (
     <>
-    <div className="xyz">
+    <div className="xyz" id="section1">
     
     <h2 id="heading1">Landing Page</h2>
     <p id="heading2">Choose from pre-built layouts of our unique landing pages</p>

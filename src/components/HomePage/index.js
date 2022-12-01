@@ -1,13 +1,8 @@
 import React from "react";
-import {useRef} from 'react';
 import "./styles.css";
 import { IoIosArrowDown } from "react-icons/io";
 
-
 const HomePage = () => {
-
-  
-
   return (
     <div className="content-main">
       <div className="sub-div1">
@@ -21,15 +16,14 @@ const HomePage = () => {
         <img src="./images/switcher.svg" className="main-image" />
         <br />
         <br />
-       
-     
-        <button className="my-button" >
-          <i className="my-logo">
-            <IoIosArrowDown />
-          </i>
-          View Landings
-        </button>
-       
+        <a href="#section1">
+          <button className="my-button">
+            <i className="my-logo">
+              <IoIosArrowDown />
+            </i>
+            View Landings
+          </button>
+        </a>
       </div>
       <div>
         <img src=".\images\screens01.png" className="main-img1"></img>

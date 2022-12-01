@@ -38,6 +38,7 @@
    
     overflow-y: scroll;
     inset: 7;
+ 
 
 }
 
@@ -51,7 +52,7 @@
 .my-button {
     border: none;
     background: none;
-    color: #f9f9f9;
+    color: #f9f9f9 ;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
     margin-left: 10px;
