@@ -29,8 +29,8 @@ useEffect(() => {
         <div className="container-fluid main-div2">
           <img
             src="./images/logo.svg"
-            width="54"
-            height="44"
+            // width="35"
+            // height="37"
             className="img-logo"
           />
           <h2 className="silicon">Silicon</h2>
