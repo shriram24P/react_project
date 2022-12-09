@@ -33,12 +33,12 @@ const HomePage = () => {
           className="main-img1"
           src=".\images\screens01.png"
           initial={{ y: 0 }}
-          animate={{ y: 30 }}
+          animate={{ y: 40 }}
           transition={{
             type: "smooth",
             repeatType: "mirror",
-            duration: 1,
-            repeat: 2,
+            duration: 0.8,
+            repeat: 3,
           }}
         />
       </div>
@@ -52,7 +52,7 @@ const HomePage = () => {
             type: "smooth",
             repeatType: "scroll",
             duration: 0.8,
-            repeat: 2,
+            repeat: 3,
           }}
         />
       </div>
