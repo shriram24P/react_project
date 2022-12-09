@@ -2,3 +2,20 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+::selection {
+    color: black;
+    background-color: rgb(207, 209, 241);
+  }
+  
+
+  [data-theme="light"] {
+     color: #111;
+     background-color: #f3f3f3;
+  }
+  
+  [data-theme="dark"] {
+   color: #f3f3f3;
+   background-color: rgb(7, 7, 32);
+  }
+  

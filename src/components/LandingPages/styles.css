@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+.xyz {
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+
+
 .card {
     cursor: pointer;
+    margin: 10px;
+    text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+
 }
 
 .card-t {
     text-align: center;
 }
 
-.card-t:hover {
+.col-main:hover {
     cursor: pointer;
     color: #6366f1 !important;
     text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
@@ -23,33 +35,31 @@
 }
 
 #heading2 {
+    font-size: 1.125rem;
     text-align: center;
     font-family: 'Manrope', sans-serif;
     padding-bottom: 15px;
-   
+
 }
 
 .col-main {
-    width: 415px;
+    width: 450px;
     height: 200px;
-    /* margin-right: 20px;
-    margin-left: 50px; */
+    margin-right: 8px;
+
     margin-bottom: 100px;
-    padding-left: 20px;
+    padding-left: 5px;
     padding-right: 1px;
+
 }
 
-.card-body{
+.card-body {
     margin-top: 15px;
     margin-bottom: 5px;
 }
-.xyz{
-    margin-left: 150px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
-h2 .card-t{
+
+h2 .card-t {
     text-align: center;
     font-size: 40px;
     color: black;
@@ -61,4 +71,13 @@ p {
     font-size: 20px;
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  .xyz {
+    align-items: center;
+  }
+    
 }

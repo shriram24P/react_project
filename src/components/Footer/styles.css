@@ -32,8 +32,6 @@
 /* Style the form icons */
 .icon {
   padding: 10px;
-  
-
   min-width: 50px;
   text-align: center;
 }
@@ -67,8 +65,9 @@
 }
 .s-btn:hover{
     opacity: 1;
-    background-color: #6366F1;
+    background-color: #5154f5;
   color: white;
+  transition: 0.3s;
 }
 
 

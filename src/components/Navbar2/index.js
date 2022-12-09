@@ -231,7 +231,7 @@ const Navbar2 = () => {
             <div class="form-check form-switch pad-div">
                 <input class="form-check-input form1" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
             </div>
-            <label class=" t-label" >Dark</label>
+            <label class="t-label" >Dark</label>
             <button className="cart-btn"><i className="cart-logo"><BiCart/></i>Buy now</button>
           </div>
             

@@ -1,6 +1,9 @@
 import React from "react";
 import "./styles.css";
 import { IoIosArrowDown } from "react-icons/io";
+import { motion } from "framer-motion";
+
+
 
 const HomePage = () => {
   return (
@@ -26,10 +29,32 @@ const HomePage = () => {
         </a>
       </div>
       <div>
-        <img src=".\images\screens01.png" className="main-img1"></img>
+        <motion.img
+          className="main-img1"
+          src=".\images\screens01.png"
+          initial={{ y: 0 }}
+          animate={{ y: 30 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 1,
+            repeat: 2,
+          }}
+        />
       </div>
       <div>
-        <img src=".\images\screens02.png" className="main-img2"></img>
+        <motion.img
+          className="main-img2"
+          src=".\images\screens02.png"
+          initial={{ y: 0 }}
+          animate={{ y: -40 }}
+          transition={{
+            type: "smooth",
+            repeatType: "scroll",
+            duration: 0.8,
+            repeat: 2,
+          }}
+        />
       </div>
     </div>
   );

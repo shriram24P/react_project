@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Manrope:wght@800&display=swap');
 
 
+
 .main-div2 {
 padding-right: 5rem !important;
     padding-left: 5rem !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
    
 }
 
 .img-logo {
     cursor: pointer;
+    height: 70px;
+    width: 70px;
 }
 
 .silicon {
@@ -64,7 +67,7 @@ padding-right: 5rem !important;
 .nav-li {
     font-size: 15px;
     font-weight: 600;
-    color: #32354c !important;
+    color: #60637b !important;
     font-family: 'Manrope', sans-serif;
     padding: 0.535rem 1rem;
 
@@ -103,7 +106,7 @@ padding-right: 5rem !important;
   }
 
   .item-d {
-    padding: 10px;
+    padding: 7px;
     padding-left: 10px;
     color: #676b92;
     font-size: small;
@@ -140,13 +143,14 @@ padding-right: 5rem !important;
 
  .cart-btn {
   border: none;
-  background-color: #6366f1;
+  background-color: #4043f3;
   color: #f9f9f9;
   border-radius: 5px;
-  padding: 5px 10px 5px 10px;
+  padding: 7px 15px 7px 15px;
   margin-left: 10px;
   font-weight: 600;
   margin-right: 20px;
+  opacity: 0.8;
  }
 
  .cart-logo {
@@ -157,4 +161,9 @@ padding-right: 5rem !important;
  .mynew {
    margin-left: 6px;
    padding-bottom: 2px;
+ }
+
+ .cart-btn:hover {
+   opacity: 1;
+   transition: 0.3s;
  }
