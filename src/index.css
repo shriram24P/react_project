@@ -1,3 +1,25 @@
+:root {
+    --white: #fff;
+    --black: #111;
+    --grey: #888;
+    --darkgrey: #1b1b1b;
+    
+  }
+  
+  [data-theme="light"] {
+    --white: #ffffff;
+    --black: #111;
+    --grey: #888;
+    --darkgrey: #1b1b1b;
+  }
+  
+  [data-theme="dark"] {
+    --white: #111;
+    --black: #fff;
+    --grey: #888;
+    --darkgrey: #f3f3f3;
+  }
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -7,15 +29,6 @@ html {
     color: black;
     background-color: rgb(207, 209, 241);
   }
-  
 
-  [data-theme="light"] {
-     color: #111;
-     background-color: #f3f3f3;
-  }
-  
-  [data-theme="dark"] {
-   color: #f3f3f3;
-   background-color: rgb(7, 7, 32);
-  }
+
   

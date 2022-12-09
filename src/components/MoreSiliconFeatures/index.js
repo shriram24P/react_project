@@ -21,7 +21,7 @@ const MoreSiliconFeatures = () => {
                 <i className='logo'><BsBootstrapFill/></i>
              </div>
                 <div className="card-body">
-                <h5 className="card-t2">Built with Bootstrap 5</h5>
+                <h2 className="card-t2">Built with Bootstrap 5</h2>
                 <p>Silicon is the powerful front-end solution based on Bootstrap 5 — the world’s most popular responsive, mobile-first front-end component library.</p>
                  </div>
             </div>

@@ -117,6 +117,8 @@
   .main-img{
     align-items: center; 
     margin-left: 80px;
+    position: fixed;
+    
   }
 
 

@@ -1,11 +1,31 @@
-import React from "react";
+import { useState } from "react";
 import "./styles.css";
-import {BiCart} from "react-icons/bi"
+import { BiCart } from "react-icons/bi";
+import { Switch } from "@mui/material";
+import { useEffect } from "react";
+import "./darkMode.css"
 
-const Navbar2 = () => {
+function Navbar2() {
+  
+const [theme, setTheme] = useState('light');
+
+const toggleTheme = () => {
+  if(theme === 'light') {
+    setTheme('dark');
+  }
+  else {
+    setTheme('light');
+  }
+};
+
+useEffect(() => {
+  localStorage.setItem('theme', theme);
+  document.body.className = theme;
+}, [theme]);
+
   return (
-    <>
-      <nav className="navbar navbar-expand-lg bg-light navbar-main-css">
+    <div className={`Navbar2 ${theme}`}>
+      <nav className="navbar navbar-expand-lg navbar-main-css">
         <div className="container-fluid main-div2">
           <img
             src="./images/logo.svg"
@@ -13,7 +33,7 @@ const Navbar2 = () => {
             height="44"
             className="img-logo"
           />
-          <a className="silicon">Silicon</a>
+          <h2 className="silicon">Silicon</h2>
           <button
             className="navbar-toggler"
             type="button"
@@ -225,20 +245,32 @@ const Navbar2 = () => {
                   Docs
                 </a>
               </li>
-             
             </ul>
-            <label class="t-label" >Light</label>
-            <div class="form-check form-switch pad-div">
-                <input class="form-check-input form1" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-            </div>
-            <label class="t-label" >Dark</label>
-            <button className="cart-btn"><i className="cart-logo"><BiCart/></i>Buy now</button>
-          </div>
-            
-        </div>
+            <label class="t-label">Light</label>
+            {/* <div className='toggle-switch'>
+                                <label >
+                                    <input type="checkbox" />
+                                    <span className='slider'> checked={!mode}
+            onClick={(e) => {
+              toggleTheme();
+            }}</span>
+                                </label>
+                            </div> */}
 
+            <Switch
+             onClick={toggleTheme}
+            />
+            <label class="t-label">Dark</label>
+            <button className="cart-btn">
+              <i className="cart-logo">
+                <BiCart />
+              </i>
+              Buy now
+            </button>
+          </div>
+        </div>
       </nav>
-    </>
+    </div>
   );
 };
 

@@ -7,12 +7,16 @@ import SiliconFeatures from "./components/SiliconFeatures";
 import HomePage from "./components/HomePage";
 import GoToTop from "./components/GoToTop";
 import Navbar2 from "./components/Navbar2";
+import "./App.css"
+
 
 function App() {
   return (
     <div>
+    <div className="both-navbars">
       <Navbar1 />
       <Navbar2 />
+    </div>
       <HomePage />
       <SiliconFeatures />
       <LandingPages />
