@@ -11,7 +11,7 @@ const SiliconFeatures = () => {
           const { id, ImageUrl, title } = items;
           return (
             <div className="main-box" key={id}>
-              <img src={ImageUrl} alt="" />
+              <img src={ImageUrl} alt="" className="main-image"/>
               <br />
               <br />
               <h5 className="head-m">{title}</h5>
