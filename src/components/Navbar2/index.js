@@ -1,27 +1,24 @@
 import { useState } from "react";
 import "./styles.css";
 import { BiCart } from "react-icons/bi";
-import { Switch } from "@mui/material";
 import { useEffect } from "react";
-import "./darkMode.css"
+import "./darkMode.css";
 
 function Navbar2() {
-  
-const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
 
-const toggleTheme = () => {
-  if(theme === 'light') {
-    setTheme('dark');
-  }
-  else {
-    setTheme('light');
-  }
-};
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
 
-useEffect(() => {
-  localStorage.setItem('theme', theme);
-  document.body.className = theme;
-}, [theme]);
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <div className={`Navbar2 ${theme}`}>
@@ -247,19 +244,13 @@ useEffect(() => {
               </li>
             </ul>
             <label class="t-label">Light</label>
-            {/* <div className='toggle-switch'>
-                                <label >
-                                    <input type="checkbox" />
-                                    <span className='slider'> checked={!mode}
-            onClick={(e) => {
-              toggleTheme();
-            }}</span>
-                                </label>
-                            </div> */}
+            <div className="toggle-switch">
+              <label>
+                <input type="checkbox" />
+                <span className="slider" onClick={toggleTheme}></span>
+              </label>
+            </div>
 
-            <Switch
-             onClick={toggleTheme}
-            />
             <label class="t-label">Dark</label>
             <button className="cart-btn">
               <i className="cart-logo">
@@ -272,6 +263,6 @@ useEffect(() => {
       </nav>
     </div>
   );
-};
+}
 
 export default Navbar2;
